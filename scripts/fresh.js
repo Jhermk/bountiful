@@ -1,28 +1,32 @@
-const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+const fruitDataUrl =
+  "https://brotherblazzard.github.io/canvas-content/fruit.json";
 const fruitSelects = document.querySelectorAll('[id^="fruit-"]');
 const specialInstructions = document.getElementById("special-instructions");
 const orderOutput = document.getElementById("order-output");
 
 // Fetch fruit data
 fetch(fruitDataUrl)
-  .then(response => response.json())
-  .then(fruitData => {
+  .then((response) => response.json())
+  .then((fruitData) => {
     // Populate select elements with fruit options
-    const fruitOptions = fruitData.map(fruit => `<option value="${fruit.name}" data-carbs="${fruit.carbs}" data-protein="${fruit.protein}" data-fat="${fruit.fat}" data-sugar="${fruit.sugar}" data-calories="${fruit.calories}" data-price="${fruit.price}">${fruit.name} - $${fruit.price}</option>`);
-    fruitSelects.forEach(select => {
-      select.innerHTML = fruitOptions.join('');
+    const fruitOptions = fruitData.map(
+      (fruit) =>
+        `<option value="${fruit.name}" data-carbs="${fruit.carbs}" data-protein="${fruit.protein}" data-fat="${fruit.fat}" data-sugar="${fruit.sugar}" data-calories="${fruit.calories}" data-price="${fruit.price}">${fruit.name} - $${fruit.price}</option>`
+    );
+    fruitSelects.forEach((select) => {
+      select.innerHTML = fruitOptions.join("");
     });
   });
 
 // Handle form submission
 const form = document.getElementById("specialty-drink-form");
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const firstName = document.getElementById("first-name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
-  const delivery = document.getElementById('delivery').value;
+  const delivery = document.getElementById("delivery").value;
   const fruit1 = document.getElementById("fruit-1").value;
   const fruit2 = document.getElementById("fruit-2").value;
   const fruit3 = document.getElementById("fruit-3").value;
@@ -36,7 +40,7 @@ form.addEventListener("submit", function(event) {
   let caloriesTotal = 0;
   let orderTotal = 0;
 
-  selectedFruits.forEach(fruit => {
+  selectedFruits.forEach((fruit) => {
     const selectedOption = document.querySelector(`option[value="${fruit}"]`);
     carbsTotal += parseInt(selectedOption.getAttribute("data-carbs"));
     proteinTotal += parseInt(selectedOption.getAttribute("data-protein"));
@@ -66,8 +70,7 @@ form.addEventListener("submit", function(event) {
     <span>Thank you for ordering ${firstName}. See you soon for your delivery.</span>
   `;
 
-// Display order details on the page
-const orderDetails = document.getElementById("order-details");
-orderDetails.innerHTML = orderDetails1Html;
-
+  // Display order details on the page
+  const orderDetails = document.getElementById("order-details");
+  orderDetails.innerHTML = orderDetails1Html;
 });
