@@ -32,21 +32,21 @@
 
     .links nav ul li.btn a:hover {
         color: orangered;
-
+      
     }
 
 
-    .banner-left img {
+    .banner-left img{
         display: block;
     }
 
-    .headline {
+    .headline{
         font-size: 50px;
         background-color: orangered;
     }
 
-
-
+    
+ 
 
     main {
         background-color: #efefef;
@@ -144,30 +144,30 @@
 
     }
 
-    .container-area-cards {
+    .container-area-cards{
         padding: 60px;
     }
 
-    .area-cards {
+    .area-cards{
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         grid-template-rows: auto;
     }
 
+  
 
-
-    .area-cards h3 {
+    .area-cards h3{
         margin: 10px;
 
     }
 
-    .area-cards p {
+    .area-cards p{
         margin: 14px 0;
     }
+    
 
-
-    .area-card a {
-        margin-left: 0;
+    .area-card  a {
+       margin-left: 0;
     }
 
     .weather-card {
@@ -225,38 +225,37 @@
     .faq {
         display: flex;
         padding: 40px;
+       
+      }
 
-    }
-
-
+    
     .content-about-us h3 {
         font-size: 40px;
         line-height: 1.2;
         margin-bottom: 30px;
     }
-
-    .about-us-page h4 {
+    .about-us-page h4{
         text-align: center;
     }
 
-    .customer-data {
+    .customer-data{
         display: none;
     }
 
 
-    .content-about-us img {
+    .content-about-us img{
         float: right;
         width: 50%;
     }
-
+    
     .content-about-us p {
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 30px;
     }
-
-
-
+    
+    
+    
     .content-about-us form {
         display: grid;
         grid-template-columns: 1fr;
@@ -265,17 +264,17 @@
         border-radius: 14px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
-
+    
 
 
     /* Fresh page */
-    .fresh-page {
-        padding: 40px;
-        border: none;
-        background-color: #fff;
-        width: 60%;
-
-    }
-
+    .fresh-page{
+       padding: 40px;
+       border: none;
+       background-color: #fff;
+       width: 60%;
 
 }
+
+
+};

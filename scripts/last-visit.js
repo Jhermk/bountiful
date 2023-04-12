@@ -28,3 +28,5 @@ if (lastVisited) {
 
 // update last visited time
 window.localStorage.setItem("lastVisited", Date.now());
+
+

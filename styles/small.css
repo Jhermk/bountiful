@@ -27,7 +27,7 @@
         text-align: center;
     }
 
-    .banner-text #date {
+    .banner-text #date{
         text-align: center;
     }
 
@@ -113,21 +113,21 @@
         width: 100%;
     }
 
-
+        
     .banner-section {
         position: relative;
-    }
-
-
-    .banner-section picture img {
+      }
+      
+      
+      .banner-section picture img {
         width: 100%;
         height: 100%;
         height: 70vh;
         object-fit: cover;
-
-    }
-
-    .banner-container {
+        
+      }
+      
+      .banner-container {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -139,8 +139,8 @@
         display: grid;
         grid-template-columns: 1fr 90%;
         align-items: center;
-    }
-
+      }
+      
 
 
 
@@ -156,7 +156,7 @@
         align-items: center;
     } */
 
-
+  
 
     .banner-right {
         width: 80%;
@@ -167,7 +167,7 @@
         color: #fff;
     }
 
-    .headline {
+    .headline{
         font-size: 29px;
     }
 
@@ -189,10 +189,10 @@
         border: 1px solid #364E68;
         margin: 0;
         font-size: 12px;
-
+      
     }
 
-    .banner-right .description {
+    .banner-right .description{
         background-color: orangered;
         line-height: 26px;
         border-radius: 10px;
@@ -231,7 +231,7 @@
         padding: 10px;
     }
 
-
+ 
 
     .our-delivery {
         margin: 40px 0;
@@ -302,7 +302,7 @@
         animation: glow 1s ease-in-out infinite alternate;
         color: #fff;
         text-align: center;
-
+    
     }
 
     @keyframes glow {
@@ -1011,3 +1011,5 @@
         transition: 0.3s ease-in-out;
     }
 }
+
+;
